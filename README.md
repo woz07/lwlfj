@@ -72,8 +72,8 @@ public class Example {
 }
 ```
 
-Lastly, there is the log function, which logs out the information, we can do this by calling the `log(Class<?> c, Severity s, String m)` 
-function, this lets us log out the information to the terminal. The param `Class<?> c` expects you to give the class where the log was called from 
+Lastly, there is the log function, which logs out the information to the terminal, we can do this by calling the `log(Class<?> c, Severity s, String m)` 
+function. The param `Class<?> c` expects you to give the class where the log was called from 
 to make your life easier, as it will help you in debugging or whatever you are attempting to do. The param `Severity s` is the severity of the log 
 and finally the param `String m` is the output you want printed out to the screen
 ```java
