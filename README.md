@@ -6,7 +6,10 @@ Lwlfj is a logging library for Java applications, you can use it to log content 
 It offers customization so you can alter what type of output you receive, things like; background color, foreground color and severity are all customizable.
 
 #### How to use it
-Install `lwlfj.jar` and add it to your local maven repository, then add the dependency to your pom.xml as so:
+1: Git clone this repository into your local machine `https://www.github.com/woz07/lwlfj`
+        a: In intelliJ to the right side there should be something called 'Maven', open it up and then click on 'Execute Maven Goal' then type in `clean install` and hit enter, this will automatically create a local repository for you with the correct jar
+        b: In other IDE's I believe you will need to build the project as a maven clean build, which does the same thing as above.
+2: Now all you need to do is create a maven project and within your `pom.xml` file inside of <dependencies> add this:
 ```xml
         <dependency>
             <groupId>dev.woz07.lwlfj</groupId>
