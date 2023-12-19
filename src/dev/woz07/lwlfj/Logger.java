@@ -43,7 +43,7 @@ public class Logger {
         this.background = background;
     }
     
-    /*
+    /**
     * Prints out the details of the log along with correct colour
     * @param    parent      The class who called the logger
     * @param    severity    Contains the level of severity
