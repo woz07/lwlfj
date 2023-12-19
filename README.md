@@ -17,6 +17,16 @@ It offers customization so you can alter what type of output you receive, things
             <version>1.0</version>
         </dependency>
 ```
+### ALTERNATIVELY
+You could use it with straight up Java
+1: Create a `lib` folder in your projects folders
+2: Install `lwlfj-1.0.jar` from inside of `/target`
+3: Place the jar file within the `lib` folder
+
+### ON INTELLIJ
+Go to file > Project Structure > Modules
+Click on the + which is located above export
+Select JAR or directories find the `lib` folder and select on `lwlfj-1.0.jar`
 
 ## Examples
 ### Starting out
