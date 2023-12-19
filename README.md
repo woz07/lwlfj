@@ -1,8 +1,8 @@
 # lwlfj
-#### Light Weight Logging For Java
+### Light Weight Logging For Java
 
 #### What is it
-LWLFJ is a logging library for Java applications, you can use it to log content to the terminal.
+Lwlfj is a logging library for Java applications, you can use it to log content to the terminal.
 It offers customization so you can alter what type of output you receive, things like; background color, foreground color and severity are all customizable.
 
 #### How to use it
