@@ -11,10 +11,13 @@ Install `lwlfj` and add it to your module dependencies and you can begin using i
 ## Examples
 #### Starting out
 ```java
-public class Main {
-  public static void main(String[] args) {
-    Logger logger1 = new Logger();
-    Logge
-  }
+import dev.woz07.lwlfj.Logger;
+import dev.woz07.lwlfj.level.Severity;
+
+public class Example {
+    public static void main(String[] args) {
+        Logger logger = new Logger();
+        logger.log(Example.class, Severity.INFO, "This is a basic log from the Example class");
+    }
 }
 ```
