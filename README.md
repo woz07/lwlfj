@@ -1,11 +1,31 @@
 # lwlfj
-### Light Weight Logging For Java
+## Light Weight Logging For Java
 
-### What is it
+---
+
+## What is it
 Lwlfj is a logging library for Java applications, you can use it to log content to the terminal.
 It offers customization so you can alter what type of output you receive, things like; background color, foreground color and severity are all customizable.
 
-### How to use it
+---
+
+## How to use it
+### Local Maven
+1. Git clone `https://www.github.com/woz07/lwlfj` into your local machine
+2. Run the maven command `clean install`, which will install the jar to your local maven repository
+3. In your `pom.xml` add the dependency:
+   ```xml
+        <dependency>
+            <groupId>dev.woz07.lwlfj</groupId>
+            <artifactId>lwlfj</artifactId>
+            <version>1.0</version>
+        </dependency>
+   ```
+
+### Clean Java
+
+THIS NEEDS TO GO
+## How to use it
 1: Git clone this repository into your local machine `https://www.github.com/woz07/lwlfj`
         a: In intelliJ to the right side there should be something called 'Maven', open it up and then click on 'Execute Maven Goal' then type in `clean install` and hit enter, this will automatically create a local repository for you with the correct jar
         b: In other IDE's I believe you will need to build the project as a maven clean build, which does the same thing as above.
@@ -27,6 +47,8 @@ You could use it with straight up Java
 Go to file > Project Structure > Modules
 Click on the + which is located above export
 Select JAR or directories find the `lib` folder and select on `lwlfj-1.0.jar`
+
+---
 
 ## Examples
 ### Starting out
