@@ -88,7 +88,7 @@ public class Example {
 }
 ```
 
-Lastly, there is the reset function, this can be treated like a flush method and essentially just flushes out the data within `foreground` and 
+Lastly, there is the reset function `reset()`, this can be treated like a flush method and essentially just flushes out the data within `foreground` and 
 `background`, basically it just sets them to their default values so that you don't need to automatically do it yourself.
 ```java
 import dev.woz07.lwlfj.Logger;
