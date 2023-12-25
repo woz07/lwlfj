@@ -63,7 +63,7 @@ public class Logger {
     /*
      * Resets the colour of the text to default
      */
-    private void reset() {
+    public void reset() {
         System.out.print(Foreground.RESET.getColor());
         System.out.print(Background.RESET.getColor());
     }
