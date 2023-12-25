@@ -72,7 +72,7 @@ public class Example {
 }
 ```
 
-Lastly, there is the log function, which logs out the information to the terminal, we can do this by calling the `log(Class<?> c, Severity s, String m)` 
+Next, there is the log function, which logs out the information to the terminal, we can do this by calling the `log(Class<?> c, Severity s, String m)` 
 function. The param `Class<?> c` expects you to give the class where the log was called from 
 to make your life easier, as it will help you in debugging or whatever you are attempting to do. The param `Severity s` is the severity of the log 
 and finally the param `String m` is the output you want printed out to the screen
@@ -84,6 +84,26 @@ public class Example {
     public static void main(String[] args) {
         Logger logger = new Logger();
         logger.log(Example.class, Severity.INFO, "Example has started");
+    }
+}
+```
+
+Lastly, there is the reset function, this can be treated like a flush method and essentially just flushes out the data within `foreground` and 
+`background`, basically it just sets them to their default values so that you don't need to automatically do it yourself.
+```java
+import dev.woz07.lwlfj.Logger;
+public class Example {
+    public static void main(String[] args) {
+         Logger logger = new Logger();
+
+         logger.setForeground(Foreground.WHITE);
+         logger.setBackground(Background.BLACK);
+
+         logger.log(Example.class, Severity.INFO, "White foreground with black background");
+
+         logger.reset();
+         
+         logger.log(Example.class, Severity.INFO, "Back to default foreground and background");
     }
 }
 ```
